@@ -1,16 +1,16 @@
 const ShopItemFunc = ({ item }) => {
     return (
-        <div class="main-content">
+        <div className="main-content">
             <h2>{item.brand}</h2>
             <h1>{item.title}</h1>
             <h3>{item.description}</h3>
-            <div class="description">
+            <div className="description">
                 {item.descriptionFull}
             </div>
-            <div class="highlight-window mobile"><div class="highlight-overlay"></div></div>
-            <div class="divider"></div>
-            <div class="purchase-info">
-                <div class="price">{item.currency}{item.price}.00</div>
+            <div className="highlight-window mobile"><div class="highlight-overlay"></div></div>
+            <div className="divider"></div>
+            <div className="purchase-info">
+                <div className="price">{item.currency}{item.price.toFixed(2)}</div>
                 <button>Добавить в корзину</button>
             </div>
         </div>
